@@ -3,12 +3,6 @@
   padding-bottom: 94px;
 }
 
-.activity {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
-}
-
 .activity__container {
   margin-left: auto;
   margin-right: auto;
