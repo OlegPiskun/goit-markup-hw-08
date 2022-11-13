@@ -1,14 +1,31 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .clients__section-title {
@@ -22,14 +39,42 @@
 }
 
 .clients__set {
-  display: flex;
-  gap: 30px;
   list-style: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
 }
 
 .clients__item {
-  width: 170px;
   height: 92px;
+
+  @media screen and (max-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+  }
 }
 
 .clients__link {
