@@ -234,12 +234,22 @@
           <ul class="team-set">
             <!--Інфо Ігор Дем'яненко-->
             <li class="team-set__item">
-              <img
-                src="images/index/product-designer.jpg"
-                alt="photo-pd"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source 
+                  srcset="./images/index/img1-450.jpg 1x, ./images/index/img1@2x-900.jpg 2x" 
+                  media="(max-width: 767px)" 
+                />
+                <source 
+                  srcset="./images/index/img1-354.jpg 1x, ./images/index/img1@2x-708.jpg 2x" 
+                  media="(min-width: 768px)" 
+                />
+                <source 
+                  srcset="./images/index/img1-270.jpg 1x, ./images/index/img1@2x-540.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                />
+                <img src="./images/index/product-designer.jpg" alt="дизайнер" />
+              </picture>
+                          
               <div class="info-box">
                 <h3 class="info-box__name">Ігор Дем'яненко</h3>
                 <p class="info-box__profession" lang="en">Product Designer</p>
@@ -302,12 +312,21 @@
 
             <!--Інфо Ольга Рєпіна-->
             <li class="team-set__item">
-              <img
-                src="images/index/frontend-developer.jpg"
-                alt="photo-fd"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source 
+                  srcset="./images/index/img2-450.jpg 1x, ./images/index/img2@2x-900.jpg 2x" 
+                  media="(max-width: 767px)" 
+                />
+                <source 
+                  srcset="./images/index/img2-354.jpg 1x, ./images/index/img2@2x-708.jpg 2x" 
+                  media="(min-width: 768px)" 
+                />
+                <source 
+                  srcset="./images/index/img2-270.jpg 1x, ./images/index/img2@2x-540.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                />
+                <img src="./images/index/frontend-developer.jpg" alt="розробник" />
+              </picture>
               <div class="info-box">
                 <h3 class="info-box__name">Ольга Рєпіна</h3>
                 <p class="info-box__profession" lang="en">Frontend Developer</p>
@@ -370,12 +389,23 @@
 
             <!--Інфо Микола Тарасов-->
             <li class="team-set__item">
-              <img
-                src="images/index/marketing.jpg"
-                alt="photo-marketing"
-                width="270"
-                height="260"
-              />
+              <div class="team-set__box-photo">
+                <picture>
+                <source 
+                  srcset="./images/index/img3-450.jpg 1x, ./images/index/img3@2x-900.jpg 2x" 
+                  media="(max-width: 767px)" 
+                />
+                <source 
+                  srcset="./images/index/img3-354.jpg 1x, ./images/index/img3@2x-708.jpg 2x" 
+                  media="(min-width: 768px)" 
+                />
+                <source 
+                  srcset="./images/index/img3-270.jpg 1x, ./images/index/img3@2x-540.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                />
+                <img src="./images/index/marketing.jpg" alt="маркетолог" />
+              </picture>
+              </div>
               <div class="info-box">
                 <h3 class="info-box__name">Микола Тарасов</h3>
                 <p class="info-box__profession" lang="en">Marketing</p>
@@ -438,12 +468,21 @@
 
             <!--Інфо Михайло Єрмаков-->
             <li class="team-set__item">
-              <img
-                src="images/index/ui-designer.jpg"
-                alt="photo-uid"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source 
+                  srcset="./images/index/img4-450.jpg 1x, ./images/index/img4@2x-900.jpg 2x" 
+                  media="(max-width: 767px)" 
+                />
+                <source 
+                  srcset="./images/index/img4-354.jpg 1x, ./images/index/img4@2x-708.jpg 2x" 
+                  media="(min-width: 768px)" 
+                />
+                <source 
+                  srcset="./images/index/img4-270.jpg 1x, ./images/index/img4@2x-540.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                />
+                <img src="./images/index/ui-designer.jpg" alt="дизайнер інтерфейсу" />
+              </picture>
               <div class="info-box">
                 <h3 class="info-box__name">Михайло Єрмаков</h3>
                 <p class="info-box__profession" lang="en">UI Designer</p>
@@ -564,7 +603,7 @@
       <div class="page-footer__container">
         <div class="page-footer__box">
           <div class="page-footer__logo-address">
-            <div class="logo">
+            <div class="logo logo--alignment">
               <a class="logo__link" href="./index.html">
                 <span class="logo__text-web">Web</span
                 ><span class="logo__text-studio logo__text-studio--white"
