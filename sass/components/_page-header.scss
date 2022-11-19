@@ -1,6 +1,6 @@
 .page-header {
   background-color: $primaryColor;
-  border-bottom: 1px solid #ececec;
+  // border-bottom: 1px solid #ececec;
 }
 
 .page-header__container {
@@ -239,12 +239,21 @@
 }
 
 .site-contacts {
-  // display: flex;
-
   list-style: none;
 
   @media screen and (max-width: 767px) {
-    // display: block;
+    display: flex;
+    // flex-direction: row-reverse;
+    flex-direction: column;
+
+    .site-contacts__item:nth-of-type(1) {
+      order: 2;
+    }
+
+    .site-contacts__item:nth-of-type(2) {
+      order: 1;
+    }
+
     margin-bottom: 64px;
   }
 
@@ -268,7 +277,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    &:first-child {
+    &:last-child {
       margin-bottom: 32px;
     }
   }
