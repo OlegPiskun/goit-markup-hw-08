@@ -52,59 +52,63 @@
               </svg>
             </button>
             <div class="menu-container" id="menu-container" data-menu>
-              <ul class="site-nav">
-                <li class="site-nav__item">
-                  <a class="site-nav__link site-nav__link--active" href=""
-                    >Студія</a
-                  >
-                </li>
-                <li class="site-nav__item">
-                  <a class="site-nav__link" href="./portfolio.html"
-                    >Портфоліо</a
-                  >
-                </li>
-                <li class="site-nav__item">
-                  <a class="site-nav__link" href="./index.html">Контакти</a>
-                </li>
-              </ul>
-              <ul class="site-contacts">
-                <li class="site-contacts__item">
-                  <a
-                    class="site-contacts__link site-contacts__link--mail"
-                    href="mailto:info@devstudio.com"
-                    ><svg class="site-contacts__icon" width="16" height="12">
-                      <use
-                        href="./images/symbol-defs.svg#icon-letter"
-                      ></use></svg
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="site-contacts__item site-contacts__link--tel">
-                  <a class="site-contacts__link" href="tel:+380961111111"
-                    ><svg class="site-contacts__icon" width="10" height="16">
-                      <use
-                        href="./images/symbol-defs.svg#icon-smartphone"
-                      ></use></svg
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-              <ul class="site-networks">
-                <li class="site-networks__item">
-                  <a class="site-networks__link" href="">Instagram</a>
-                </li>
-                <li class="site-networks__item">
-                  <a class="site-networks__link" href="">Twitter</a>
-                </li>
-                <li class="site-networks__item">
-                  <a class="site-networks__link" href="">Facebook</a>
-                  </a>
-                </li>
-                <li class="site-networks__item">
-                  <a class="site-networks__link" href="">LinkedIn</a>
-                  </a>
-                </li>
-              </ul>
+              <div class="mob-menu-top">
+                <ul class="site-nav">
+                  <li class="site-nav__item">
+                    <a class="site-nav__link site-nav__link--active" href=""
+                      >Студія</a
+                    >
+                  </li>
+                  <li class="site-nav__item">
+                    <a class="site-nav__link" href="./portfolio.html"
+                      >Портфоліо</a
+                    >
+                  </li>
+                  <li class="site-nav__item">
+                    <a class="site-nav__link" href="./index.html">Контакти</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mob-menu-bottom">
+                <ul class="site-contacts">
+                  <li class="site-contacts__item">
+                    <a
+                      class="site-contacts__link site-contacts__link--mail"
+                      href="mailto:info@devstudio.com"
+                      ><svg class="site-contacts__icon" width="16" height="12">
+                        <use
+                          href="./images/symbol-defs.svg#icon-letter"
+                        ></use></svg
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="site-contacts__item site-contacts__link--tel">
+                    <a class="site-contacts__link" href="tel:+380961111111"
+                      ><svg class="site-contacts__icon" width="10" height="16">
+                        <use
+                          href="./images/symbol-defs.svg#icon-smartphone"
+                        ></use></svg
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+                <ul class="site-networks">
+                  <li class="site-networks__item">
+                    <a class="site-networks__link" href="">Instagram</a>
+                  </li>
+                  <li class="site-networks__item">
+                    <a class="site-networks__link" href="">Twitter</a>
+                  </li>
+                  <li class="site-networks__item">
+                    <a class="site-networks__link" href="">Facebook</a>
+                    </a>
+                  </li>
+                  <li class="site-networks__item">
+                    <a class="site-networks__link" href="">LinkedIn</a>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -253,12 +257,13 @@
                   srcset="
                   ./images/index/img1-450.jpg 1x, 
                   ./images/index/img1@2x-900.jpg 2x" 
-                  media="(max-width: 767px)" 
+                  media="(max-width: 767px)"
                 />
                 <img
-                 src="./images/index/product-designer.jpg" 
-                 alt="дизайнер"
-                 />
+                 src="./images/index/img1-450.jpg" 
+                 alt="Дизайнер"
+                 width="450"
+                />
               </picture>
                           
               <div class="info-box">
@@ -325,18 +330,29 @@
             <li class="team-set__item">
               <picture>
                 <source 
-                  srcset="./images/index/img2-450.jpg 1x, ./images/index/img2@2x-900.jpg 2x" 
-                  media="(max-width: 767px)" 
+                  srcset="
+                  ./images/index/img2-270.jpg 1x, 
+                  ./images/index/img2@2x-540.jpg 2x
+                  " 
+                  media="(min-width: 1200px)" 
                 />
                 <source 
-                  srcset="./images/index/img2-354.jpg 1x, ./images/index/img2@2x-708.jpg 2x" 
+                  srcset="
+                  ./images/index/img2-354.jpg 1x, 
+                  ./images/index/img2@2x-708.jpg 2x
+                  " 
                   media="(min-width: 768px)" 
                 />
                 <source 
-                  srcset="./images/index/img2-270.jpg 1x, ./images/index/img2@2x-540.jpg 2x" 
-                  media="(min-width: 1200px)" 
+                  srcset="
+                  ./images/index/img2-450.jpg 1x, 
+                  ./images/index/img2@2x-900.jpg 2x
+                  " 
+                  media="(max-width: 767px)" 
                 />
-                <img src="./images/index/frontend-developer.jpg" alt="розробник" />
+                <img src="./images/index/img2-450.jpg alt="Розробник"
+                width="450" 
+                />
               </picture>
               <div class="info-box">
                 <h3 class="info-box__name">Ольга Рєпіна</h3>
@@ -402,19 +418,30 @@
             <li class="team-set__item">
               <div class="team-set__box-photo">
                 <picture>
-                <source 
-                  srcset="./images/index/img3-450.jpg 1x, ./images/index/img3@2x-900.jpg 2x" 
-                  media="(max-width: 767px)" 
+                  <source 
+                    srcset="
+                    ./images/index/img3-270.jpg 1x, 
+                    ./images/index/img3@2x-540.jpg 2x
+                    " 
+                    media="(min-width: 1200px)" 
+                  />
+                  <source 
+                    srcset="
+                    ./images/index/img3-354.jpg 1x, 
+                    ./images/index/img3@2x-708.jpg 2x
+                    " 
+                    media="(min-width: 768px)" 
+                  />
+                  <source 
+                    srcset="
+                    ./images/index/img3-450.jpg 1x, 
+                    ./images/index/img3@2x-900.jpg 2x
+                    " 
+                    media="(max-width: 767px)" 
                 />
-                <source 
-                  srcset="./images/index/img3-354.jpg 1x, ./images/index/img3@2x-708.jpg 2x" 
-                  media="(min-width: 768px)" 
+                <img src="./images/index/img3-450.jpg" alt="Маркетолог"
+                width="450"
                 />
-                <source 
-                  srcset="./images/index/img3-270.jpg 1x, ./images/index/img3@2x-540.jpg 2x" 
-                  media="(min-width: 1200px)" 
-                />
-                <img src="./images/index/marketing.jpg" alt="маркетолог" />
               </picture>
               </div>
               <div class="info-box">
@@ -481,18 +508,28 @@
             <li class="team-set__item">
               <picture>
                 <source 
-                  srcset="./images/index/img4-450.jpg 1x, ./images/index/img4@2x-900.jpg 2x" 
-                  media="(max-width: 767px)" 
+                  srcset="
+                  ./images/index/img4-270.jpg 1x, 
+                  ./images/index/img4@2x-540.jpg 2x
+                  " 
+                  media="(min-width: 1200px)" 
                 />
                 <source 
-                  srcset="./images/index/img4-354.jpg 1x, ./images/index/img4@2x-708.jpg 2x" 
+                  srcset="
+                  ./images/index/img4-354.jpg 1x, 
+                  ./images/index/img4@2x-708.jpg 2x
+                  " 
                   media="(min-width: 768px)" 
                 />
                 <source 
-                  srcset="./images/index/img4-270.jpg 1x, ./images/index/img4@2x-540.jpg 2x" 
-                  media="(min-width: 1200px)" 
+                  srcset="
+                  ./images/index/img4-450.jpg 1x, 
+                  ./images/index/img4@2x-900.jpg 2x" 
+                  media="(max-width: 767px)" 
                 />
-                <img src="./images/index/ui-designer.jpg" alt="дизайнер інтерфейсу" />
+                <img src="./images/index/img4-450.jpg" alt="Дизайнер інтерфейсу"
+                width="450"
+                />
               </picture>
               <div class="info-box">
                 <h3 class="info-box__name">Михайло Єрмаков</h3>
