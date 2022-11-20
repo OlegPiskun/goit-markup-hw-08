@@ -1,6 +1,5 @@
 .page-header {
   background-color: $primaryColor;
-  // border-bottom: 1px solid #ececec;
 }
 
 .page-header__container {
@@ -23,23 +22,6 @@
     display: flex;
   }
 }
-
-// .page-header__nav {
-//   @media screen and (max-width: 767px) {
-//     width: 100%;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     align-items: center;
-//     display: flex;
-//   }
-
-//   // @media screen and (min-width: 1200px) {
-//   //   align-items: center;
-//   //   margin-left: auto;
-//   //   margin-right: auto;
-//   // }
-// }
 
 .logo {
   @media screen and (max-width: 767px) {
