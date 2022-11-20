@@ -10,7 +10,7 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     max-width: 480px;
   }
 
@@ -25,9 +25,9 @@
 }
 
 .page-header__nav {
-  // @media screen and (max-width: 767px) {
-  //   align-items: center;
-  // }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 
   @media screen and (min-width: 768px) {
     align-items: center;
@@ -243,7 +243,6 @@
 
   @media screen and (max-width: 767px) {
     display: flex;
-    // flex-direction: row-reverse;
     flex-direction: column;
 
     .site-contacts__item:nth-of-type(1) {
@@ -348,6 +347,18 @@
 .site-networks__item {
   & + & {
     margin-left: 20px;
+  }
+  &:not(:first-child) {
+    margin-left: 20px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      left: -10px;
+      height: 22px;
+      width: 3px;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
   }
 }
 
