@@ -31,7 +31,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: 1200px) {
@@ -48,8 +48,8 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 76px;
-    margin-right: 165px;
+    // margin-left: 76px;
+    // margin-right: 165px;
     text-align: center;
   }
 }
@@ -119,7 +119,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    margin-left: auto;
   }
 }
 
@@ -157,8 +157,8 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    justify-content: center;
-    align-items: center;
+    margin-top: 60px;
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -176,11 +176,6 @@
   text-transform: uppercase;
 
   color: $primaryColor;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 60px;
-    margin-left: 288px;
-  }
 }
 
 .subscribe-footer__form {

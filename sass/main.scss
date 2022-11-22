@@ -1,6 +1,7 @@
 @import "utils/reset";
 @import "utils/variables";
 
+@import "components/content-modal-window";
 @import "components/body";
 @import "components/page-header";
 @import "components/hero";
@@ -12,5 +13,4 @@
 @import "components/team";
 @import "components/clients";
 @import "components/page-footer";
-@import "components/modal-mobile";
 @import "components/modal-window";
