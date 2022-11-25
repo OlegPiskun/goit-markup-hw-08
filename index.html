@@ -55,7 +55,7 @@
                     aria-label="Перемикач мобільного меню"
                   >
                     <use
-                      class="menu-toggle-close__icon-close"
+                      class="menu-toggle--close__icon-close"
                       href="./images/symbol-defs.svg#icon-close"
                     ></use>
                   </svg>
@@ -198,34 +198,59 @@
           <h2 class="activity__section-title">Чим ми займаємося</h2>
           <ul class="product-set">
             <li class="product-set__item">
-              <img
-                src="images/index/html.jpg"
-                alt="photo-html"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/html.jpg        1x,
+                    ./images/index/html-2x-740.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/index/html-2x-740.jpg"
+                  alt="Мобільні додатки"
+                  width="740"
+                />
+              </picture>
               <div class="product-set__name">
                 <h3 class="product-set__title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="product-set__item">
-              <img
-                src="images/index/css.jpg"
-                alt="photo-css"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/css.jpg        1x,
+                    ./images/index/css-2x-740.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/index/css-2x-740.jpg"
+                  alt="Десктопні додатки"
+                  width="740"
+                />
+              </picture>
+
               <div class="product-set__name">
                 <h3 class="product-set__title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="product-set__item">
-              <img
-                src="images/index/jscript.jpg"
-                alt="photo-jscript"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/jscript.jpg        1x,
+                    ./images/index/jscript-2x-740.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/index/jscript-2x-740.jpg"
+                  alt="Дизайнерські рішення"
+                  width="740"
+                />
+              </picture>
               <div class="product-set__name">
                 <h3 class="product-set__title">Дизайнерські рішення</h3>
               </div>

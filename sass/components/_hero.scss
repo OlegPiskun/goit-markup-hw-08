@@ -1,5 +1,8 @@
 .hero {
   max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   color: $primaryColor;
   text-align: center;
   background-image: $gradient, url("../images/index/hero-bg-480.jpg");
@@ -22,7 +25,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: $gradient, url("../images/index/hero-bg-1600.jpg");
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -34,8 +38,6 @@
 
 .hero__container {
   max-width: 100%;
-  height: 400px;
-  padding-top: 118px;
   margin-left: auto;
   margin-right: auto;
   margin-left: auto;
@@ -53,7 +55,6 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    padding-top: 200px;
   }
 }
 
