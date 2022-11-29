@@ -828,8 +828,6 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -892,17 +890,39 @@ body {
 }
 
 .hero-portfolio {
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: #ffffff;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .hero-portfolio__container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 320px) {
+  .hero-portfolio__container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-portfolio__container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-portfolio__container {
+    max-width: 1200px;
+  }
 }
 
 .hero-portfolio__visually-hidden {
@@ -934,17 +954,39 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
   list-style: none;
 }
-
-.buttons-set__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (max-width: 767px) {
+  .buttons-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 330px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons-set {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .buttons-set__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons-set__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
 .buttons-set__btn {
   background-color: #f5f4fa;
   font-weight: 500;
@@ -979,6 +1021,17 @@ body {
 
 .projects-set__item {
   list-style: none;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .projects-set__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-set__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .projects-set__link {
